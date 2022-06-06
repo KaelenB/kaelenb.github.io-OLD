@@ -2,23 +2,13 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "app-root",
-  template: `
-    <span>bingo !</span>
-
-    <div class="pdf-container">
-      <pdf-viewer [src]="pdfSrc" [original-size]="true" style="height: 100vh;">
-      </pdf-viewer>
-    </div>
-  `,
-  styles: [
-    `
-      .pdf-container {
-        height: 100vh;
-      }
-    `,
-  ],
+  template: `<ul>
+      <li><a routerLink="">menu</a></li>
+      <li><a routerLink="tetris">tetris</a></li>
+    </ul>
+    <router-outlet></router-outlet>`,
+  styles: [``],
 })
 export class AppComponent {
   title = "kaelenb.github.io";
-  pdfSrc = "assets/pdf/resume.pdf";
 }
