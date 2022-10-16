@@ -4,14 +4,14 @@ import { Component, OnInit } from "@angular/core";
   selector: "app-resume",
   template: `
     <div class="pdf-container">
-      <pdf-viewer [src]="pdfSrc" [original-size]="true" style="height: 100vh;">
+      <pdf-viewer [src]="pdfSrc" [original-size]="true" style="height: 100%">
       </pdf-viewer>
     </div>
   `,
   styles: [
     `
       .pdf-container {
-        height: 100vh;
+        height: 100%;
       }
     `,
   ],
