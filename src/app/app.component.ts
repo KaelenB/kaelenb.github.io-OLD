@@ -2,10 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "app-root",
-  template: ` <mat-toolbar class="header">
-      <a routerLink="">menu</a>&nbsp;
-      <a routerLink="tetris">tetris</a>
-    </mat-toolbar>
+  template: `<app-nav></app-nav>
     <div class="body">
       <router-outlet></router-outlet>
     </div>`,
@@ -19,11 +16,6 @@ import { Component } from "@angular/core";
 
         .body {
           height: 100%;
-        }
-        .header {
-          top: 0px;
-          position: fixed;
-          width: 100%;
         }
       }
     `,

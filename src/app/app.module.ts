@@ -6,9 +6,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { tetrisSharedModule } from "projects/tetris/src/app/app.module";
 import { ResumeComponent } from "./resume/resume.component";
 import { SharedModule } from "./shared/shared.module";
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
-  declarations: [AppComponent, ResumeComponent],
+  declarations: [AppComponent, ResumeComponent, NavComponent],
   imports: [
     SharedModule,
     BrowserModule,
