@@ -4,16 +4,24 @@ import { Component, OnInit } from "@angular/core";
   selector: "app-nav",
   template: `
     <mat-toolbar>
-      <a routerLink="">menu</a>&nbsp;
-      <a routerLink="tetris">tetris</a>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu>
+        <button mat-menu-item routerLink="">
+          <mat-icon>home</mat-icon>Home
+        </button>
+        <button mat-menu-item routerLink="tetris">tetris</button>
+      </mat-menu>
+      kaelenb.github.io
     </mat-toolbar>
   `,
   styles: [
     `
       :host {
-          top: 0px;
-          position: fixed;
-          width: 100%;
+        top: 0px;
+        position: fixed;
+        width: 100%;
       }
     `,
   ],
